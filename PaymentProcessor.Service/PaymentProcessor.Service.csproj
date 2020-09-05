@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PaymentProcessor.BusinessRuleEngine\PaymentProcessor.BusinessRuleEngine.csproj" />
+    <ProjectReference Include="..\PaymentProcessor.Entities\PaymentProcessor.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
