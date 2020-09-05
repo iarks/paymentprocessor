@@ -113,10 +113,14 @@ namespace PaymentProcessor.Tests
         {
             // This is the business logic as follows.
 
-            var sut = new PaymentService(null, null)
-                .CheckRulesForPayments(null);
+            // in a real application, the dependencies of this payment service will be generated and injected using some kind of container
+            // In a .NET core prod application, this payment service itself should be registered in a container and injected where required
+            // Also, this payment service would be async
+            var sut = new PaymentService(paymentRulesAsPredicates, ruleInstanceToExecute);
+                
+            var businessEntity = sut.CheckRulesForPayments(payments);
 
-            Assert.IsTrue(sut.IsSuccess);
+            Assert.IsTrue(businessEntity.IsSuccess);
         }
     }
 }
