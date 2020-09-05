@@ -8,4 +8,8 @@
     <Folder Include="RuleEngine\RuleExecutors\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PaymentProcessor.Entities\PaymentProcessor.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
