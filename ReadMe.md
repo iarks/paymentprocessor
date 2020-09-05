@@ -8,7 +8,7 @@ Projects in solution:
 - BusinessRuleEngine - Houses the rule engine implementatin code
 - Entities - project entities
 - Service - The service layer implemetation of the rule engine. This service layer calls the rule engine internally
-- Tests - Please use the test runner in Visual Studio to test the project. All tests are written using MSTest. The test code is identical to the payment processor code because initially this designed as the only starting point of the application, but later code was added to payment processor to make running the code easier.
+- Tests - Please use the test runner in Visual Studio to test the project. All tests are written using MSTest. The test code is identical to the payment processor code because initially this designed as the only starting point of the application, but later code was added to paymentprocessor project to make running the code easier.
 
 # Scope
 The intention of the project is to make a rules engine, where the rules for payment types can be stored in the database. The database schema I have designed the solution around is as follows:
