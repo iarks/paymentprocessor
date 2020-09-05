@@ -1,8 +1,6 @@
 ﻿using PaymentProcessor.Entities;
 using System;
-using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
 
 namespace PaymentProcessor.BusinessRuleEngine.RuleEngine
 {
@@ -14,7 +12,7 @@ namespace PaymentProcessor.BusinessRuleEngine.RuleEngine
         /// <param name="rule">the rule entity to be converted into expression</param>
         /// <param name="ruleInstance">the name of the rule instance to register this rule with</param>
         /// <returns>The compileable expression</returns>
-        public static Expression<Func<T, bool>> GenerateExpression(PaymentRule rule, 
+        public static Expression<Func<T, bool>> GenerateExpression(PaymentRule rule,
             out string ruleInstance)
         {
             // extract the name of the property to match

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PaymentProcessor.Entities
+﻿namespace PaymentProcessor.Entities
 {
     public class BusinessEntity
     {

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PaymentProcessor.Entities
+﻿namespace PaymentProcessor.Entities
 {
     /// <summary>
     /// The payment class serves as a business entity that holds the transaction

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace paymentprocessor
+﻿namespace paymentprocessor
 {
     public class MainService
     {

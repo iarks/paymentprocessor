@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PaymentProcessor.Entities
+﻿namespace PaymentProcessor.Entities
 {
     public class Membership
     {

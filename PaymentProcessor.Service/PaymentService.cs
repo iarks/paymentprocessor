@@ -7,8 +7,8 @@ using System.Linq;
 
 namespace PaymentProcessor.Service
 {
-   public class PaymentService
-   {
+    public class PaymentService
+    {
         private readonly List<Rule> _paymentRulesAsPredicates;
         private readonly Dictionary<string, IRuleExecutor> _ruleInstanceToExecute;
 

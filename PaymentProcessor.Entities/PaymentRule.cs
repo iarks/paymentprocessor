@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PaymentProcessor.Entities
+﻿namespace PaymentProcessor.Entities
 {
     /// <summary>
     /// The payment rule class is the class that will hold the rule for the payment service
