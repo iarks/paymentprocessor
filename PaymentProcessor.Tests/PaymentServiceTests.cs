@@ -98,10 +98,10 @@ namespace PaymentProcessor.Tests
             // added to the database
             // this should be done in application startup
             ruleInstanceToExecute = new Dictionary<string, IRuleExecutor>();
-            foreach (var px in paymentRulesAsPredicates)
+            foreach (var paymentRulePredicate in paymentRulesAsPredicates)
             {
-                var typeName = px.RuleInstanceName;
-                string objectToInstantiate = $"PaymentProcessor.Business.RuleEngine.RuleExecutors.{typeName}, CodingRound.BusinessRuleEngine";
+                var typeName = paymentRulePredicate.RuleInstanceName;
+                string objectToInstantiate = $"PaymentProcessor.BusinessRuleEngine.RuleExecutors.{typeName}, CodingRound.BusinessRuleEngine";
                 var objectType = Type.GetType(objectToInstantiate);
                 var instantiatedObject = Activator.CreateInstance(objectType);
                 ruleInstanceToExecute.Add(typeName, instantiatedObject as IRuleExecutor);
