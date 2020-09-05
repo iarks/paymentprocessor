@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using PaymentProcessor.Entities;
 
 namespace PaymentProcessor.BusinessRuleEngine.RuleEngine.Abstractions
 {
@@ -9,5 +7,10 @@ namespace PaymentProcessor.BusinessRuleEngine.RuleEngine.Abstractions
     /// </summary>
     public interface IRuleExecutor
     {
+        /// <summary>
+        /// The rule logic to execute
+        /// </summary>
+        /// <param name="payment">the payment object</param>
+        void Execute(Payment payment);
     }
 }

@@ -101,7 +101,7 @@ namespace PaymentProcessor.Tests
             foreach (var paymentRulePredicate in paymentRulesAsPredicates)
             {
                 var typeName = paymentRulePredicate.RuleInstanceName;
-                string objectToInstantiate = $"PaymentProcessor.BusinessRuleEngine.RuleExecutors.{typeName}, CodingRound.BusinessRuleEngine";
+                string objectToInstantiate = $"PaymentProcessor.BusinessRuleEngine.RuleEngine.RuleExecutors.{typeName}, PaymentProcessor.BusinessRuleEngine";
                 var objectType = Type.GetType(objectToInstantiate);
                 var instantiatedObject = Activator.CreateInstance(objectType);
                 ruleInstanceToExecute.Add(typeName, instantiatedObject as IRuleExecutor);
