@@ -10,6 +10,7 @@ namespace PaymentProcessor.BusinessRuleEngine.RuleEngine.RuleExecutors
         {
             Console.WriteLine("Activate Membership");
             Console.WriteLine("Activate membership sent");
+            Console.WriteLine("");
         }
     }
 }

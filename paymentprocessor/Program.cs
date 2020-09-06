@@ -72,7 +72,10 @@ namespace paymentprocessor
             payments = new List<PaymentProcessor.Entities.Payment>()
             {
                 new PaymentProcessor.Entities.Payment("Physical Product", 123.00F, new { }),
-                new PaymentProcessor.Entities.Payment("Membership", 120F, new { })
+                new PaymentProcessor.Entities.Payment("Membership", 120F, new { }),
+                new PaymentProcessor.Entities.Payment("Book", 120F, new { }),
+                new PaymentProcessor.Entities.Payment("MembershipUpgrade", 120F, new { }),
+                new PaymentProcessor.Entities.Payment("Learning To Ski", 120F, new { }),
             };
 
             // compile all rules from database into predicates

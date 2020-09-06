@@ -9,7 +9,7 @@ namespace PaymentProcessor.BusinessRuleEngine.RuleEngine.RuleExecutors
         public void Execute(Payment payment)
         {
             Console.WriteLine("Adding First Aid video");
-
+            Console.WriteLine("");
         }
     }
 }

@@ -76,7 +76,10 @@ namespace PaymentProcessor.Tests
             payments = new List<Entities.Payment>()
             {
                 new Entities.Payment("Physical Product", 123.00F, new { }),
-                new Entities.Payment("Membership", 120F, new { })
+                new Entities.Payment("Membership", 120F, new { }),
+                new Entities.Payment("Book", 120F, new { }),
+                new Entities.Payment("MembershipUpgrade", 120F, new { }),
+                new Entities.Payment("Learning To Ski", 120F, new { }),
             };
 
             // compile all rules from database into predicates

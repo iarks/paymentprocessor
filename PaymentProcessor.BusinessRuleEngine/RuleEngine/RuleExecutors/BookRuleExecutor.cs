@@ -10,6 +10,7 @@ namespace PaymentProcessor.BusinessRuleEngine.RuleEngine.RuleExecutors
         {
             Console.WriteLine("Generating Duplicate packing slip");
             Console.WriteLine("Generating Comission Payment");
+            Console.WriteLine("");
         }
     }
 }

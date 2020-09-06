@@ -10,6 +10,7 @@ namespace PaymentProcessor.BusinessRuleEngine.RuleEngine.RuleExecutors
         {
             Console.WriteLine("Upgrading membership");
             Console.WriteLine("Upgrade Email sent");
+            Console.WriteLine("");
         }
     }
 }
